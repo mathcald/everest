@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+    <style>
+        body{
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: #46a128;
+            width: 100%;
+        }
+        
+        div.header{
+            display: flex;
+            flex-direction: row;
+            
+            width: 100%;
+            height: 400px;
+            background-color: #46a128;
+            align-items: center;
+            
+        }
+
+        div.logo{
+            margin-left: 10%;
+            width: 40%;
+           height: 20%;
+           margin-right: 10%;
+        }
+
+
+        div.horizontalBar {
+            margin-left: 0%;
+            margin-right: 5%;
+            width: 5px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        div.menu {    
+            display: flex;
+            flex-direction: row;
+        }
+
+        a.bttMenu{
+            margin-left: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        div.dash{
+            background-color: #fff;
+            width: 100%;
+            
+            color:#206552;
+            font-weight: bold;
+        }
+
+        #title{
+            font-size: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        div.turmas {
+           display: flex;
+           flex-direction: row;
+           margin-left: 50px;
+            margin-right: 50px;
+        }
+        p.turmaText {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        div.footer{
+            background-color:#46a128;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+
+        @media (min-width: 420px) and (max-width: 830px) {
+            
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+               
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.logo {
+                margin-bottom: 20px;
+            }
+            
+            .bttMenu {
+                font-size: 15px;
+            }
+
+            
+            
+        }
+
+    
+
+        @media (max-width: 419px) {
+        
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: 200px;
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.menu{
+                margin-top: 20%;
+            }
+
+            .bttMenu {
+                font-size: 10px;
+            }
+
+            div.turmas {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="logo">
+            <img src="../logo.png" alt="some text" width=100% height=100%>
+        </div>
+        <div class="horizontalBar"></div>
+        <div class="menu">
+            <a class="bttMenu" href="/"> HOME </a>
+            <a class="bttMenu" href="/quemsomos/"> QUEM SOMOS </a>
+            <a class="bttMenu" href="/turmas/"> TURMAS </a>
+            <a class="bttMenu" href="/docentes/"> DOCENTES </a>
+            <a class="bttMenu" href="/contato/"> CONTATOS </a>
+            
+        </div>
+
+        
+
+    </div>
+
+    <div class="dash">
+        <h1 id="title">TURMAS</h1>
+        <div class="turmas">
+        <h3>TURMA GOLD</h3>
+        <h4>(nossa turma AVANÇADA)</h4>
+        
+        </div>
+        <p class="turmaText">46 aulas semanais, 04 atendimentos individualizados
+            de redação por mês, 04 simulados específicos por mês e 01 simulado ENEM por mês. Aulas pela
+            manhã de 8:00 às 12:45 h com dois retornos de aula a tarde de 14:15 às 19:15 h e um retorno
+            para o simulado específico de 14:15 às 17:30 h.</p>
+            
+        <div class="turmas">
+            <h3>TURMA PLATINUM</h3>
+            <h4>(nossa turma INTERMEDIARIA)</h4>
+            
+            </div>
+            <p class="turmaText">34 aulas semanais, 02 atendimentos
+                individualizados de redação por mês, 04 simulados específicos por mês e 01 simulado ENEM por
+                mês. Aulas pela manhã de 8:00 às 12:45 h com um retorno de aula a tarde de 14:15 às 17:30 h
+                e um retorno para o simulado específico de 14:15 às 17:30 h.</p>
+        
+        <div class="turmas">
+            <h3>TURMA SMART</h3>
+            <h4>(nossa turma INICIAL)</h4>
+            
+            </div>
+            <p class="turmaText"> 30 aulas semanais, 01 atendimento individualizado de
+                redação por mês e 01 simulado ENEM por mês. Aulas somente pela manhã de 8:00 às 12:45 h.</p>
+
+        <div class="turmas">
+            <h3>TURMA PLUS ENEM</h3>
+            <h4>(nossa turma SIMPLES)</h4>
+            
+            </div>
+            <p class="turmaText"> 30 aulas semanais, 01 atendimento individualizado de
+                redação por mês e 01 simulado ENEM por mês. Aulas somente pela manhã de 8:00 às 12:45 h.</p>
+    </div>
+    <div class="footer">
+        <img src="../logo.png" alt="some text" width=200 height=50>
+    </div>
+</body>
+</html>
