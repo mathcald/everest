@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+                body{
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: #46a128;
+            width: 100%;
+        }
+        
+        div.header{
+            display: flex;
+            flex-direction: row;
+            
+            width: 100%;
+            height: 400px;
+            background-color: #46a128;
+            align-items: center;
+            
+        }
+
+        div.logo{
+            margin-left: 10%;
+            width: 40%;
+           height: 20%;
+           margin-right: 10%;
+        }
+
+
+        div.horizontalBar {
+            margin-left: 0%;
+            margin-right: 5%;
+            width: 5px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        div.menu {    
+            display: flex;
+            flex-direction: row;
+        }
+
+        a.bttMenu{
+            margin-left: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        div.dash{
+            background-color: #fff;
+            width: 100%;
+            height: 700px;
+            color:#206552;
+            font-weight: bold;
+        }
+
+        #contatos{
+            margin-left: 50px;
+        }
+
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #CCC;
+            border-radius: 8px;
+            background-color: #46a128;
+            color:#fff;
+        }  
+
+        form div + div {
+            margin-top: 1em;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        div.footer{
+            background-color:#46a128;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        @media (min-width: 420px) and (max-width: 830px) {
+            
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+               
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.logo {
+                margin-bottom: 20px;
+            }
+            
+            .bttMenu {
+                font-size: 15px;
+            }
+            
+        }
+
+    
+
+        @media (max-width: 419px) {
+        
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: 200px;
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.menu{
+                margin-top: 20%;
+            }
+
+            .bttMenu {
+                font-size: 10px;
+            }
+
+            form {
+                width: 280px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="logo">
+            <img src="../logo.png" alt="some text" width=100% height=100%>
+        </div>
+        <div class="horizontalBar"></div>
+        <div class="menu">
+            <a class="bttMenu" href="/"> HOME </a>
+            <a class="bttMenu" href="/quemsomos/"> QUEM SOMOS </a>
+            <a class="bttMenu" href="/turmas/"> TURMAS </a>
+            <a class="bttMenu" href="/docentes/"> DOCENTES </a>
+            <a class="bttMenu" href="/contato/"> CONTATOS </a>
+            
+        </div>
+
+    </div> 
+
+    <div class="dash">
+
+        <div id="contatos">
+            <h1>
+                CONTATOS
+            </h1>
+
+            <h3>
+                Redes Socias
+            </h3>
+
+            <p>
+                - Facebook: Everest Pré-Vestibular
+                - Instagram: @preparatorioeverest
+                - YouTube: Everest Virtual 
+            </p>
+
+            <h3>
+                E-mail e telefone
+            </h3>
+            <p>
+                - email: everestmedicina@gmail.com
+                - (81) 97912-5074 TIM
+            </p>
+        </div>
+
+        <div id="form">
+            <h1> FORMULARIO</h1>
+            <P>RESPONDA NOSSO FORMULARIO E ENTRAREMOS EM CONTATO</P>
+        </div>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar sua mensagem</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <img src="../logo.png" alt="some text" width=200 height=50>
+    </div>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes</title>
+    <style>
+            body{
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: #46a128;
+            width: 100%;
+        }
+        
+        div.header{
+            display: flex;
+            flex-direction: row;
+            
+            width: 100%;
+            height: 400px;
+            background-color: #46a128;
+            align-items: center;
+            
+        }
+
+        div.logo{
+            margin-left: 10%;
+            width: 40%;
+           height: 20%;
+           margin-right: 10%;
+        }
+
+
+        div.horizontalBar {
+            margin-left: 0%;
+            margin-right: 5%;
+            width: 5px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+
+        div.menu {    
+            display: flex;
+            flex-direction: row;
+        }
+
+        a.bttMenu{
+            margin-left: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        div.dash{
+            background-color: #fff;
+            width: 100%;
+            
+            color:#206552;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.Docentes{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+
+        .slider {
+            display: block;
+            height: 293px;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .slider li {
+            list-style: none;
+            position: absolute; }
+
+        .slider img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .slider label {
+            background-color: #fff;
+            bottom: 10px;
+            cursor: pointer;
+            display: block;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+            z-index: 10;
+         }
+
+        .slider li:nth-child(1) label {
+            left: 10px;
+        }
+
+        .slider li:nth-child(2) label {
+            left: 40px;
+        }
+
+        .slider li:nth-child(3) label {     
+            left: 70px;
+
+        }
+
+        .slider img {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        div.footer{
+            background-color:#46a128;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        @media (min-width: 420px) and (max-width: 830px) {
+            
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+               
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.logo {
+                margin-bottom: 20px;
+            }
+            
+            .bttMenu {
+                font-size: 15px;
+            }
+
+            div.dash {
+                flex-direction: column;
+            }
+            
+            .slider {
+                display:none;
+            }
+        }
+
+    
+
+        @media (max-width: 419px) {
+        
+            div.header {
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: 200px;
+            }  
+
+            div.horizontalBar {
+                display: none;
+            }
+
+            div.menu{
+                margin-top: 20%;
+            }
+
+            .bttMenu {
+                font-size: 10px;
+            }
+
+            div.dash {
+                flex-direction: column;
+            }
+
+            .slider {
+                display:none;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="logo">
+            <img src="../logo.png" alt="some text" width=100% height=100%>
+        </div>
+        <div class="horizontalBar"></div>
+        <div class="menu">
+            <a class="bttMenu" href="/"> HOME </a>
+            <a class="bttMenu" href="/quemsomos/"> QUEM SOMOS </a>
+            <a class="bttMenu" href="/turmas/"> TURMAS </a>
+            <a class="bttMenu" href="/docentes/"> DOCENTES </a>
+            <a class="bttMenu" href="/contato/"> CONTATOS </a>
+            
+        </div>
+
+    </div> 
+    <div class="dash">
+
+        <div class="Docentes">
+            <h1>DOCENTES</h1>
+            <h3>
+                Ciências da Natureza:
+            </h3>
+            <h4>
+                Prof. José Márcio (QUÍMICA) <br>
+                Prof. Evair Dias (QUÍMICA)<br>
+                Prof. Soares (QUÍMICA)<br>
+                Prof. Márcio Henrique (FÍSICA)<br>
+                Prof. Téo Cristo (FÍSICA)<br>
+                Prof. Hélder Furtado (BIOLOGIA)<br>
+                Prof. Sobral (BIOLOGIA)
+            </h4>
+
+            <h3>
+                Ciências  Humanas:
+            </h3>
+            <h4>
+                Prof. Alex Santos (HISTÓRIA)<br>
+                Prof. Lennon Nascimento (HISTÓRIA)<br>
+                Prof. Danilo Rodrigues (GEOGRAFIA)<br>
+                Prof. Erasmo Costa (GEOGRAFIA)<br>
+                Prof. Ronaldo Cardoso (FILOSOFIA/SOCIOLOGIA)
+            </h4>
+
+            <h3>
+                Linguagens e Códigos:
+            </h3>
+            <h4>
+                Prof. Anderson Damasceno (LITERATURA/ARTES)<br>
+                Prof. Alan Martins (LÍNGUA PORTUGUESA)
+            </h4>
+
+            <h3>
+                Redação:
+            </h3>
+            <h4>
+                Prof. Alan Martins <br>
+                Cláudia Caroline
+            </h4>
+
+            <h3>
+                Matematica:
+            </h3>
+            <h4>
+                Prof. Jhon Jhon Paiva<br>
+                Prof. Josiel Rocha<br>
+                Prof. Téo Cristo
+
+            </h4>
+        </div>
+
+
+
+
+        <ul class="slider">
+                 <li>
+                       <input type="radio" id="slide1" name="slide" checked>
+                       <label for="slide1"></label>
+                       <img src="ErasmoCosta-Geografia.jpeg" />
+                 </li>
+                 <li>
+                       <input type="radio" id="slide2" name="slide">
+                       <label for="slide2"></label>
+                       <img src="Helder Furtado - biologia.jpg" />
+                 </li>
+                 <li>
+                       <input type="radio" id="slide3" name="slide">
+                       <label for="slide3"></label>
+                       <img src="História.jpg" />
+                </li>
+            </ul>
+    </div> 
+    <div class="footer">
+        <img src="../logo.png" alt="some text" width=200 height=50>
+    </div> 
+</body>
+</html>
